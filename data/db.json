@@ -1,0 +1,473 @@
+{
+  "workouts": [
+  {
+    "id": "7f8a12b4-5c91-492e-9821-3a4b9101c121",
+    "name": "Fran",
+    "mode": "For Time",
+    "equipment": [
+      "barbell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "21 thrusters",
+      "21 pull-ups",
+      "15 thrusters",
+      "15 pull-ups",
+      "9 thrusters",
+      "9 pull-ups"
+    ],
+    "createdAt": "5/10/2022, 10:00:00 AM",
+    "updatedAt": "5/10/2022, 10:00:00 AM",
+    "trainerTips": [
+      "Aim to complete all sets unbroken",
+      "RX Weights: 95lb/65lb",
+      "Scale pull-ups to ring rows if needed"
+    ]
+  },
+  {
+    "id": "3b4c81a2-09d4-4f67-8e12-781ab902c342",
+    "name": "Cindy",
+    "mode": "AMRAP 20",
+    "equipment": [
+      "pull-up bar"
+    ],
+    "exercises": [
+      "5 pull-ups",
+      "10 push-ups",
+      "15 air squats"
+    ],
+    "createdAt": "5/11/2022, 11:30:00 AM",
+    "updatedAt": "5/11/2022, 11:30:00 AM",
+    "trainerTips": [
+      "Maintain a smooth, continuous pace",
+      "Break push-ups early before failure",
+      "Aim for 20+ rounds"
+    ]
+  },
+  {
+    "id": "e5d6c7b8-1f2e-43a4-95b6-789012345678",
+    "name": "Grace",
+    "mode": "For Time",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "30 clean and jerks"
+    ],
+    "createdAt": "5/12/2022, 9:15:00 AM",
+    "updatedAt": "5/12/2022, 9:15:00 AM",
+    "trainerTips": [
+      "RX Weights: 135lb/95lb",
+      "Quick singles are a great strategy",
+      "Keep back tight during lifts"
+    ]
+  },
+  {
+    "id": "9a8b7c6d-5e4f-3a2b-1c0d-9e8f7a6b5c4d",
+    "name": "Isabel",
+    "mode": "For Time",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "30 snatches"
+    ],
+    "createdAt": "5/13/2022, 2:45:00 PM",
+    "updatedAt": "5/13/2022, 2:45:00 PM",
+    "trainerTips": [
+      "RX Weights: 135lb/95lb",
+      "Power snatches are recommended",
+      "Control your breathing between reps"
+    ]
+  },
+  {
+    "id": "1a2b3c4d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+    "name": "Helen",
+    "mode": "For Time",
+    "equipment": [
+      "kettlebell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "400m run",
+      "21 kettlebell swings",
+      "12 pull-ups"
+    ],
+    "createdAt": "5/14/2022, 8:00:00 AM",
+    "updatedAt": "5/14/2022, 8:00:00 AM",
+    "trainerTips": [
+      "3 rounds for time",
+      "RX KB: 53lb/35lb (American style)",
+      "Push the pace on the runs"
+    ]
+  },
+  {
+    "id": "2b3c4d5e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+    "name": "Diane",
+    "mode": "For Time",
+    "equipment": [
+      "barbell",
+      "wall space"
+    ],
+    "exercises": [
+      "21 deadlifts",
+      "21 handstand push-ups",
+      "15 deadlifts",
+      "15 handstand push-ups",
+      "9 deadlifts",
+      "9 handstand push-ups"
+    ],
+    "createdAt": "5/15/2022, 4:20:00 PM",
+    "updatedAt": "5/15/2022, 4:20:00 PM",
+    "trainerTips": [
+      "RX Weights: 225lb/155lb",
+      "Protect your lower back on deadlifts",
+      "Scale handstand push-ups to pike push-ups if needed"
+    ]
+  },
+  {
+    "id": "3c4d5e6f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+    "name": "Jackie",
+    "mode": "For Time",
+    "equipment": [
+      "rower",
+      "barbell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "1000m row",
+      "50 thrusters",
+      "30 pull-ups"
+    ],
+    "createdAt": "5/16/2022, 6:00:00 PM",
+    "updatedAt": "5/16/2022, 6:00:00 PM",
+    "trainerTips": [
+      "RX Weights: 45lb barbell (empty bar)",
+      "Pace the row so you can start thrusters immediately",
+      "Break thrusters into manageable sets"
+    ]
+  },
+  {
+    "id": "4d5e6f7a-8b9c-0d1e-2f3a-4b5c6d7e8f9a",
+    "name": "Annie",
+    "mode": "For Time",
+    "equipment": [
+      "jump rope"
+    ],
+    "exercises": [
+      "50 double-unders",
+      "50 sit-ups",
+      "40 double-unders",
+      "40 sit-ups",
+      "30 double-unders",
+      "30 sit-ups",
+      "20 double-unders",
+      "20 sit-ups",
+      "10 double-unders",
+      "10 sit-ups"
+    ],
+    "createdAt": "5/17/2022, 7:15:00 AM",
+    "updatedAt": "5/17/2022, 7:15:00 AM",
+    "trainerTips": [
+      "Scale double-unders to 2x single-unders if needed",
+      "Use an AbMat for sit-ups if available",
+      "Keep transitions fast"
+    ]
+  },
+  {
+    "id": "5e6f7a8b-9c0d-1e2f-3a4b-5c6d7e8f9a0b",
+    "name": "Karen",
+    "mode": "For Time",
+    "equipment": [
+      "medicine ball",
+      "wall space"
+    ],
+    "exercises": [
+      "150 wall-ball shots"
+    ],
+    "createdAt": "5/18/2022, 12:00:00 PM",
+    "updatedAt": "5/18/2022, 12:00:00 PM",
+    "trainerTips": [
+      "RX Weights: 20lb to 10ft / 14lb to 9ft",
+      "Break into sets of 15-20 from the start",
+      "Breathe at the top of each rep"
+    ]
+  },
+  {
+    "id": "6f7a8b9c-0d1e-2f3a-4b5c-6d7e8f9a0b1c",
+    "name": "Nancy",
+    "mode": "For Time",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "400m run",
+      "15 overhead squats"
+    ],
+    "createdAt": "5/19/2022, 5:30:00 PM",
+    "updatedAt": "5/19/2022, 5:30:00 PM",
+    "trainerTips": [
+      "5 rounds for time",
+      "RX Weights: 95lb/65lb",
+      "Keep core tight during overhead squats"
+    ]
+  },
+  {
+    "id": "7a8b9c0d-1e2f-3a4b-5c6d-7e8f9a0b1c2d",
+    "name": "Elizabeth",
+    "mode": "For Time",
+    "equipment": [
+      "barbell",
+      "rings"
+    ],
+    "exercises": [
+      "21 cleans",
+      "21 ring dips",
+      "15 cleans",
+      "15 ring dips",
+      "9 cleans",
+      "9 ring dips"
+    ],
+    "createdAt": "5/20/2022, 9:00:00 AM",
+    "updatedAt": "5/20/2022, 9:00:00 AM",
+    "trainerTips": [
+      "RX Weights: 135lb/95lb (Squat cleans recommended)",
+      "Scale ring dips to box dips or push-ups",
+      "Control the descent on dips"
+    ]
+  },
+  {
+    "id": "8b9c0d1e-2f3a-4b5c-6d7e-8f9a0b1c2d3e",
+    "name": "Eva",
+    "mode": "For Time",
+    "equipment": [
+      "kettlebell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "800m run",
+      "30 kettlebell swings",
+      "30 pull-ups"
+    ],
+    "createdAt": "5/21/2022, 10:45:00 AM",
+    "updatedAt": "5/21/2022, 10:45:00 AM",
+    "trainerTips": [
+      "5 rounds for time",
+      "RX KB: 70lb/53lb (Heavy!)",
+      "Pace the 800m run wisely to save grip"
+    ]
+  },
+  {
+    "id": "9c0d1e2f-3a4b-5c6d-7e8f-9a0b1c2d3e4f",
+    "name": "Kelly",
+    "mode": "For Time",
+    "equipment": [
+      "plyo box",
+      "medicine ball"
+    ],
+    "exercises": [
+      "400m run",
+      "30 box jumps, 24/20 in",
+      "30 wall-ball shots"
+    ],
+    "createdAt": "5/22/2022, 3:15:00 PM",
+    "updatedAt": "5/22/2022, 3:15:00 PM",
+    "trainerTips": [
+      "5 rounds for time",
+      "Step down on box jumps to save Achilles",
+      "High cardio volume—stay hydrated"
+    ]
+  },
+  {
+    "id": "0d1e2f3a-4b5c-6d7e-8f9a-0b1c2d3e4f5a",
+    "name": "Lynne",
+    "mode": "5 Rounds Max Reps",
+    "equipment": [
+      "barbell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "Max bench press (bodyweight)",
+      "Max pull-ups"
+    ],
+    "createdAt": "5/23/2022, 1:00:00 PM",
+    "updatedAt": "5/23/2022, 1:00:00 PM",
+    "trainerTips": [
+      "Rest as needed between rounds",
+      "Score is total cumulative reps of both exercises",
+      "Use a spotter for bench press"
+    ]
+  },
+  {
+    "id": "1e2f3a4b-5c6d-7e8f-9a0b-1c2d3e4f5a6b",
+    "name": "Marguerita",
+    "mode": "For Time",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "50 burpees",
+      "50 overhead squats",
+      "50 deadlifts",
+      "50 push presses"
+    ],
+    "createdAt": "5/24/2022, 4:00:00 PM",
+    "updatedAt": "5/24/2022, 4:00:00 PM",
+    "trainerTips": [
+      "RX Weights: 65lb/45lb (Light barbell)",
+      "Break movements into small, steady sets of 10",
+      "Maintain good form despite fatigue"
+    ]
+  },
+  {
+    "id": "2f3a4b5c-6d7e-8f9a-0b1c-2d3e4f5a6b7c",
+    "name": "Chief",
+    "mode": "AMRAP 3 x 5",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "3 power cleans",
+      "6 push-ups",
+      "9 air squats"
+    ],
+    "createdAt": "5/25/2022, 8:30:00 AM",
+    "updatedAt": "5/25/2022, 8:30:00 AM",
+    "trainerTips": [
+      "5 cycles of AMRAP 3 min with 1 min rest between rounds",
+      "RX Weights: 135lb/95lb",
+      "Sprint each 3-minute block"
+    ]
+  },
+  {
+    "id": "3a4b5c6d-7e8f-9a0b-1c2d-3e4f5a6b7c8d",
+    "name": "Nasty Girls",
+    "mode": "For Time",
+    "equipment": [
+      "rings",
+      "barbell"
+    ],
+    "exercises": [
+      "50 air squats",
+      "7 ring muscle-ups",
+      "10 hang power cleans"
+    ],
+    "createdAt": "5/26/2022, 11:15:00 AM",
+    "updatedAt": "5/26/2022, 11:15:00 AM",
+    "trainerTips": [
+      "3 rounds for time",
+      "RX Weights: 135lb/95lb",
+      "Scale muscle-ups to pull-ups + dips"
+    ]
+  },
+  {
+    "id": "4b5c6d7e-8f9a-0b1c-2d3e-4f5a6b7c8d9e",
+    "name": "Fight Gone Bad",
+    "mode": "5 Rounds for Reps",
+    "equipment": [
+      "rower",
+      "wall ball",
+      "plyo box",
+      "barbell"
+    ],
+    "exercises": [
+      "1 min wall-ball shots",
+      "1 min sumo deadlift high-pulls",
+      "1 min box jumps",
+      "1 min push presses",
+      "1 min calorie row",
+      "1 min rest"
+    ],
+    "createdAt": "5/27/2022, 5:00:00 PM",
+    "updatedAt": "5/27/2022, 5:00:00 PM",
+    "trainerTips": [
+      "3 rounds total (1 min per station)",
+      "RX Weights: WB 20/14lb, SDHP 75/55lb, Push Press 75/55lb",
+      "Count total reps across all movements"
+    ]
+  },
+  {
+    "id": "5c6d7e8f-9a0b-1c2d-3e4f-5a6b7c8d9e0f",
+    "name": "Barbell Burner",
+    "mode": "AMRAP 15",
+    "equipment": [
+      "barbell"
+    ],
+    "exercises": [
+      "10 power snatches",
+      "10 overhead lunges",
+      "10 bar-facing burpees"
+    ],
+    "createdAt": "5/28/2022, 9:30:00 AM",
+    "updatedAt": "5/28/2022, 9:30:00 AM",
+    "trainerTips": [
+      "RX Weights: 95lb/65lb",
+      "Keep overhead lunges controlled",
+      "Jump over the bar with both feet together on burpees"
+    ]
+  },
+  {
+    "id": "6d7e8f9a-0b1c-2d3e-4f5a-6b7c8d9e0f1a",
+    "name": "Grip & Core Test",
+    "mode": "EMOM 16",
+    "equipment": [
+      "kettlebell",
+      "pull-up bar"
+    ],
+    "exercises": [
+      "Min 1: 15 kettlebell swings",
+      "Min 2: 12 toes-to-bar",
+      "Min 3: 15 Goblet squats",
+      "Min 4: Rest"
+    ],
+    "createdAt": "5/29/2022, 2:00:00 PM",
+    "updatedAt": "5/29/2022, 2:00:00 PM",
+    "trainerTips": [
+      "Repeat sequence for 4 full sets",
+      "RX KB: 53lb/35lb",
+      "Scale toes-to-bar to knees-to-elbows or hanging leg raises"
+    ]
+  }
+],
+  "members": [
+    {
+      "id": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "name": "Jason Miller",
+      "gender": "male",
+      "dateOfBirth": "23/04/1990",
+      "email": "jason@mail.com",
+      "password": "$2b$10$0000000000000000000000.fakehashparaejemplo0000000000000000"
+    },
+    {
+      "id": "2dd5a2d0-4fe3-4b2c-8a2a-5a5b8f0d6a11",
+      "name": "Lisa Jenkins",
+      "gender": "female",
+      "dateOfBirth": "09/12/1998",
+      "email": "lisa@mail.com",
+      "password": "$2b$10$0000000000000000000000.fakehashparaejemplo0000000000000000"
+    }
+  ],
+  "records": [
+    {
+      "id": "ad75d475-ac57-44f4-a02a-8f6def58ff56",
+      "workout": "61dbae02-c147-4e28-863c-db7bd402b2d6",
+      "record": "160 reps",
+      "memberId": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "member": "/members/12a410bc-849f-4e7e-bfc8-4ef283ee4b19"
+    },
+    {
+      "id": "0d5e1c1d-6a2a-4f1c-9f9e-3b1d7c4e8f02",
+      "workout": "4a3d9aaa-608c-49a7-a004-66305ad4ab50",
+      "record": "230 reps",
+      "memberId": "2dd5a2d0-4fe3-4b2c-8a2a-5a5b8f0d6a11",
+      "member": "/members/2dd5a2d0-4fe3-4b2c-8a2a-5a5b8f0d6a11"
+    },
+    {
+      "id": "3f9c7b6e-1a4d-4c3e-8d2b-7e6a5f4c3b21",
+      "workout": "d8be2362-7b68-4ea4-a1f4-c86c1dc2dc5e",
+      "record": "13:45",
+      "memberId": "12a410bc-849f-4e7e-bfc8-4ef283ee4b19",
+      "member": "/members/12a410bc-849f-4e7e-bfc8-4ef283ee4b19"
+    }
+  ]
+}
