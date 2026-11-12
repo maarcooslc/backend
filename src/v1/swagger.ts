@@ -9,7 +9,6 @@ export const swaggerSpec = swaggerJsdoc({
       description: "Documentación de la API REST Gym generada desde los comentarios @swagger de las rutas.",
     },
     servers: [
-      { url: "http://localhost:3002/api/v1", description: "Servidor local (puerto predeterminado)" },
       { url: "/api/v1", description: "Servidor actual" },
     ],
     tags: [
