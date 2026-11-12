@@ -14,7 +14,7 @@ export interface WorkoutRecord{
     workout:string,
     record:string,
     memberId?:string,
-    member?:Miembro
+    member?:string
 }
 export interface Miembro{
     id:string,
@@ -35,4 +35,6 @@ export interface Filtros{
     name:string
     updatedAt:string
     limit:string
+    record:string
+    apiKey:string
 }

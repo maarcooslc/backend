@@ -4,8 +4,11 @@ import {v4 as uuid} from "uuid";
 import { toHttpError } from "../utils/httpError";
 
 export function getAllWorkouts(){
-    return loadDB().workouts;
-}
+try {
+        return loadDB().workouts;
+    } catch (error) {
+        throw toHttpError(error);
+    }}
     
 export function getWorkout(id:string){
     try{
@@ -30,19 +33,27 @@ export function postWorkout(workout:Workout){
 }
 export function patchWorkout(workout:Workout){
     try{
-    workout.updatedAt = Date.now().toString();
-    let workoutAnt:Workout = getWorkout(workout.id)!;
-    if(workout.equipment == null) workout.equipment = workoutAnt.equipment;
-    if(workout.exercises == null) workout.exercises = workoutAnt.exercises;
-    if(workout.name == null) workout.name = workoutAnt.name;
-    if(workout.mode == null) workout.mode = workoutAnt.mode;
-    if(workout.trainerTips == null) workout.trainerTips = workoutAnt.trainerTips;
-    workout.createdAt = workoutAnt.createdAt;
-    return updateWorkout(workout);
+        const workoutAnt = getWorkout(workout.id);
+        if (workoutAnt == null) return false;
+
+        const workoutActualizado:Workout = {
+            id: workoutAnt.id,
+            name: workout.name ?? workoutAnt.name,
+            mode: workout.mode ?? workoutAnt.mode,
+            equipment: workout.equipment ?? workoutAnt.equipment,
+            exercises: workout.exercises ?? workoutAnt.exercises,
+            createdAt: workoutAnt.createdAt,
+            updatedAt: Date.now().toString(),
+            trainerTips: workout.trainerTips ?? workoutAnt.trainerTips
+        };
+
+        return updateWorkout(workoutActualizado);
     } catch(error){
         throw toHttpError(error);
     }
 }
+
+
 export function deleteWorkout(id:string){
     try{
     return eliminarWorkout(id);
