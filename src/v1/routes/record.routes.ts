@@ -1,7 +1,6 @@
 import { Router } from "express";
 import apicache from "apicache";
-import { getAllRecords, getWorkoutRecord, patchWorkoutRecord, deleteWorkoutRecord } from "../../controller/controller";
-import { postWorkoutRecord } from "../../services/recordService";
+import { getAllRecords, getWorkoutRecord, postWorkoutRecord, patchWorkoutRecord, deleteWorkoutRecord } from "../../controller/controller";
 
 const router: Router = Router();
 const cache = apicache.middleware;

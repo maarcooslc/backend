@@ -1,17 +1,17 @@
 import type{Request,Response} from "express";
-import * as workoutService from "../services/workoutService.ts";
-import * as recordService from "../services/recordService.ts";
-import type { Filtros, Workout, WorkoutRecord } from "../types/workout.ts";
+import * as workoutService from "../services/workoutService";
+import * as recordService from "../services/recordService";
+import type { Filtros, Workout, WorkoutRecord } from "../types/workout";
 
 
-export function getAllWorkouts(request:Request,response:Response){
+export async function getAllWorkouts(request:Request,response:Response){
     const {mode} = request.query;
     const {equipment} = request.query;
     const {name} = request.query;
     const {updatedAt } = request.query;
     const {limit } = request.query;
     const {apiKey} = request.query;
-    let workouts:Workout[] = workoutService.getAllWorkouts();
+    let workouts:Workout[] = await workoutService.getAllWorkouts();
     let filtros:Filtros = {mode, equipment, name, updatedAt, limit, apiKey} as Filtros;
     if (filtros.apiKey != 'marcos1234') {
         response.status(401).send({
@@ -32,7 +32,7 @@ export function getAllWorkouts(request:Request,response:Response){
     });
 }
 
-export function getWorkouts(request:Request,response:Response){
+export async function getWorkouts(request:Request,response:Response){
     const {apiKey} = request.query;
     let filtros:Filtros = {apiKey} as Filtros;
     if (filtros.apiKey != 'marcos1234') {
@@ -51,13 +51,13 @@ export function getWorkouts(request:Request,response:Response){
     }else {
         response.send({
             status:200,
-            data: workoutService.getWorkout(id.toString())
+            data: await workoutService.getWorkout(id.toString())
         });
     }
     
 }
 
-export function postWorkout(request:Request,response:Response){
+export async function postWorkout(request:Request,response:Response){
     const body:Workout = request.body ?? {};
     if (body.name == null || body.exercises == null ||  body.equipment == null || body.mode == null || body.trainerTips == null) {
         response.status(400).send({
@@ -67,12 +67,12 @@ export function postWorkout(request:Request,response:Response){
     } else {
     response.status(201).send({
         status: 'ok',
-        data: workoutService.postWorkout(body)
+        data: await workoutService.postWorkout(body)
     });
 }
 }
 
-export function patchWorkout(request:Request,response:Response){
+export async function patchWorkout(request:Request,response:Response){
     const id = request.params.id;
     if (id == undefined){
         response.status(400).send({
@@ -90,12 +90,12 @@ export function patchWorkout(request:Request,response:Response){
             body.id = id.toString();
             response.status(201).send({
                 status: 'ok',
-                data: workoutService.patchWorkout(body)
+                data: await workoutService.patchWorkout(body)
             });
         }
     }
 }
-export function deleteWorkout(request:Request,response:Response){
+export async function deleteWorkout(request:Request,response:Response){
     const id = request.params.id;
     if (id == undefined){
         response.status(400).send({
@@ -105,15 +105,15 @@ export function deleteWorkout(request:Request,response:Response){
     } else{
         response.send({
             status:200,
-            data: workoutService.deleteWorkout(id.toString())
+            data: await workoutService.deleteWorkout(id.toString())
         });
     }
 }
 
-export function getAllRecords(request:Request,response:Response){
+export async function getAllRecords(request:Request,response:Response){
     const {record} = request.query;
     const {apiKey} = request.query;
-    let records:WorkoutRecord[] = recordService.getAllRecords();
+    let records:WorkoutRecord[] = await recordService.getAllRecords();
     let filtros:Filtros = {record, apiKey} as Filtros;
     if (filtros.apiKey != 'marcos1234') {
         response.status(401).send({
@@ -129,7 +129,7 @@ export function getAllRecords(request:Request,response:Response){
     });
 }
 
-export function getWorkoutRecord(request:Request,response:Response){
+export async function getWorkoutRecord(request:Request,response:Response){
     const {apiKey} = request.query;
     let filtros:Filtros = {apiKey} as Filtros;
     if (filtros.apiKey != 'marcos1234') {
@@ -148,13 +148,13 @@ export function getWorkoutRecord(request:Request,response:Response){
     }else {
         response.send({
             status:200,
-            data: recordService.getWorkoutRecord(id.toString())
+            data: await recordService.getWorkoutRecord(id.toString())
         });
     }
     
 }
 
-export function postWorkoutRecord(request:Request,response:Response){
+export async function postWorkoutRecord(request:Request,response:Response){
     const body:WorkoutRecord = request.body ?? {};
     if (body.id == null || body.workout == null ||  body.record == null || body.memberId == null || body.member == null) {
         response.status(400).send({
@@ -164,12 +164,12 @@ export function postWorkoutRecord(request:Request,response:Response){
     } else {
     response.status(201).send({
         status: 'ok',
-        data: recordService.postWorkoutRecord(body)
+        data: await recordService.postWorkoutRecord(body)
     });
 }
 }
 
-export function patchWorkoutRecord(request:Request,response:Response){
+export async function patchWorkoutRecord(request:Request,response:Response){
     const id = request.params.id;
     if (id == undefined){
         response.status(400).send({
@@ -187,12 +187,12 @@ export function patchWorkoutRecord(request:Request,response:Response){
             body.id = id.toString();
             response.status(201).send({
                 status: 'ok',
-                data: recordService.patchWorkoutRecord(body)
+                data: await recordService.patchWorkoutRecord(body)
             });
         }
     }
 }
-export function deleteWorkoutRecord(request:Request,response:Response){
+export async function deleteWorkoutRecord(request:Request,response:Response){
     const id = request.params.id;
     if (id == undefined){
         response.status(400).send({
@@ -202,7 +202,7 @@ export function deleteWorkoutRecord(request:Request,response:Response){
     } else{
         response.send({
             status:200,
-            data: recordService.deleteWorkoutRecord(id.toString())
+            data: await recordService.deleteWorkoutRecord(id.toString())
         });
     }
 }
