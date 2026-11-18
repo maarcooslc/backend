@@ -1,7 +1,6 @@
 # Enlaces de peticiones - Backend Workouts
 
-## Swagger y API Key
-- Documentación Swagger: https://backend-entrenamientos.onrender.com/api-docs
+## API Key
 - Obtener API Key (`GET`): https://backend-entrenamientos.onrender.com/api/v1/apiKey/
 
 ## Workouts
